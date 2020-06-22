@@ -12,48 +12,72 @@ h1{
 html
 { height: 100%;}
 
-*
-{ margin: 0;
-  padding: 0;}
 
-  #header
-{ background: #025587;
- }
 
 body
 { 
   font: normal .80em 'trebuchet ms', arial, sans-serif;
   background: #F0EFE2;
   color: #777;
-  width: 100%;}
+  width: 100%;
+  font-size: 12pt;
+}
 
 #header
 { background: #025587;
-  height: 240px;}
+  height: 500px;}
 
-#main, #logo, #menubar, #footer
+#main
 { 
   margin-left: auto; 
   margin-right: auto;
   text-align: center; 
+  display: block;
+  width: 1000px;
+  overflow: auto;
+  margin: -8px auto 0px auto;
+  box-sizing: border-box;
 }
 
 
-
-#logo
-{ width: 825px;
-  position: relative;
-  height: 165px;
-  background: #025587}
-
-
 #menubar
-{ width: 877px;
-  height: 80px;
-  padding: 0;
-  background: #29415D}
+{ 
 
+  background: #29415D;
+  padding: 2p;
+  text-align: center;
+  float: left;
+  clear: none;
+  width: 100%;
+  box-sizing: border-box;
  
+}
+#site_content
+{ 
+  overflow: hidden;
+  width: 940px;
+  margin: 0 auto 0 auto;
+  padding: 20px 24px 20px 37px;
+  background: #FFF repeat-y;
+  margin-left: auto; 
+  margin-right: auto;
+  text-align: left;
+  min-height: 550px;
+  }
+
+ #footer{
+  margin-left: auto; 
+  margin-right: auto;
+  font: normal 100% 'lucida sans unicode', arial, sans-serif;
+  height: 33px;
+  padding: 19px 0 14px 0;
+  text-align: center; 
+  background: #29425E;
+  color: #FFF;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  width: 1000px;   
+}
 
 ul#menu, ul#menu li
 { float: left;
@@ -78,85 +102,14 @@ ul#menu li a
 
 ul#menu li a:hover, ul#menu li.selected a, ul#menu li.selected a:hover
 { color: #FFF;
-  background: #1C2C3E url(menu_select.png) repeat-x;
+  background: #1C2C3E repeat-x;
 }
-
-p
-{ padding: 0 0 20px 0;
-  line-height: 1.7em;}
-
-h2, h3, h4, h5, h6 
-{ font: normal 175% 'century gothic', arial, sans-serif;
-  color: #43423F;
-  margin: 0 0 15px 0;
-  padding: 15px 0 5px 0;}
-
-h2
-{ font: normal 175% 'century gothic', arial, sans-serif;
-  color: #A4AA04;}
-
-h4, h5, h6
-{ margin: 0;
-  padding: 0 0 5px 0;
-  font: normal 120% arial, sans-serif;
-  color: #A4AA04;}
-
-h5, h6
-{ font: italic 95% arial, sans-serif;
-  padding: 0 0 15px 0;
-  color: #000;}
-
-h6
-{ color: #362C20;}
- 
-#footer{
-  width: 878px;
-  font: normal 100% 'lucida sans unicode', arial, sans-serif;
-  height: 33px;
-  padding: 24px 0 5px 0;
-  text-align: center; 
-  background: #29425E;
-  color: #FFF;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-}
-
-#site_content
-{ width: 818px;
-  overflow: hidden;
-  margin: 0 auto 0 auto;
-  padding: 20px 24px 20px 37px;
-  background: #FFF url(content.png) repeat-y;
-  margin-left: auto; 
-  margin-right: auto;
-  text-align: left;
-  }
-
-
-#main, #logo, #bar, #footer{ 
-  margin-left: auto; 
-  margin-right: auto;
-  }
 
 .sidebar
-{ float: right;
-  width: 190px;
-  padding: 0 15px 20px 15px;}
-
-.sidebar ul
-{ width: 178px; 
-  padding: 4px 0 0 0; 
-  margin: 4px 0 30px 0;}
-
-.sidebar li
-{ list-style: none; 
-  padding: 0 0 7px 0; }
-
-.sidebar li a, .sidebar li a:hover
-{ padding: 0 0 0 40px;
-  display: block;
-  background: transparent url(link.png) no-repeat left center;} 
-
-.sidebar li a.selected
-{ color: #444;
-  text-decoration: none;} 
+{ 
+  float: right;
+  width: 235px;
+  min-height: 550px;
+  padding: 0 15px 20px 15px;
+  box-sizing: border-box;
+}
